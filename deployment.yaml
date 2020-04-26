@@ -11,24 +11,24 @@ spec:
     metadata:
       labels:
         app: webapp1
-    spec: 
+    spec:
       containers:
       - name: webapp1
-      image: pradeep4069/k8s:tagversion
-      ports:
-      - containerPort: 9000
+        image: pradeep4069/k8s:tagversion
+        ports:
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: webapp1-svc
-  labels: 
+  labels:
     app: webapp1
 spec:
   type: LoadBalancer
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 9000
-  selector: 
+    targetPort: 8080
+  selector:
     app: webapp1
