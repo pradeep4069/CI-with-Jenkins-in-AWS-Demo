@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'pradeep-k8-auto'
-        CLUSTER_NAME = 'pks-k8-cluster'
+        PROJECT_ID = 'Pradeep-DevOps'
+        CLUSTER_NAME = 'kubernetes-demo-pradeep'
         LOCATION = 'us-central1-c'
         CREDENTIALS_ID = 'K8s-assignment'
     }
